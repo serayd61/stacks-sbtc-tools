@@ -1,0 +1,37 @@
+[project]
+name = "stacks-sbtc-tools"
+description = "sBTC (Stacks Bitcoin) tooling - vault, yield, collateral, oracle, liquidation"
+authors = []
+telemetry = true
+cache_dir = "./.cache"
+
+[repl.analysis]
+passes = ["check_checker"]
+check_checker = { trusted_sender = false, trusted_caller = false, callee_filter = false }
+
+[contracts]
+
+[contracts.sbtc-vault]
+path = "contracts/sbtc-vault.clar"
+clarity_version = 2
+epoch = "2.5"
+
+[contracts.sbtc-yield-strategy]
+path = "contracts/sbtc-yield-strategy.clar"
+clarity_version = 2
+epoch = "2.5"
+
+[contracts.sbtc-collateral-manager]
+path = "contracts/sbtc-collateral-manager.clar"
+clarity_version = 2
+epoch = "2.5"
+
+[contracts.sbtc-price-feed]
+path = "contracts/sbtc-price-feed.clar"
+clarity_version = 2
+epoch = "2.5"
+
+[contracts.sbtc-liquidation-engine]
+path = "contracts/sbtc-liquidation-engine.clar"
+clarity_version = 2
+epoch = "2.5"
