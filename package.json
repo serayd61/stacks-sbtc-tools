@@ -13,10 +13,24 @@
   "license": "ISC",
   "dependencies": {
     "@stacks/clarinet-sdk": "^3.9.0",
-    "@stacks/transactions": "^7.2.0",
+    "@stacks/network": "^7.3.1",
+    "@stacks/transactions": "^7.3.1",
     "@types/node": "^24.4.0",
     "chokidar-cli": "^3.0.0",
     "vitest": "^4.0.7",
     "vitest-environment-clarinet": "^3.0.0"
-  }
+  },
+  "main": "deploy-test.js",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serayd61/stacks-sbtc-tools.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/serayd61/stacks-sbtc-tools/issues"
+  },
+  "homepage": "https://github.com/serayd61/stacks-sbtc-tools#readme"
 }
